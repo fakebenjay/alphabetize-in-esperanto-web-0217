@@ -1,4 +1,4 @@
-def alphabetize(arr)
+def alphabetize(array)
   esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   english =   "abcdefghijklmnopqrstuvwxyz"
 
@@ -6,7 +6,7 @@ def alphabetize(arr)
   ## ĉ in ĉu vi parolas esperanton becomes d for sorting purposes
   ## all letters are replaced/moved over this way, not just Esperanto ones.
 
-  arr.sort_by do |word|
+  array.sort_by do |word|
     word.tr(esperanto, english)
   end
 end
